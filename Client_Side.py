@@ -52,14 +52,14 @@ def main_program():
                         #if user wants to know account info
 			elif main_input == 3:
 
-                                #request user to enter account no.
+                                #requesting method of info retrieval
                                 print("")
                                 print("Choose any one of the following by entering option no. -")
                                 print("")
                                 acc_no_input_find = int(input("[1] Find by account no. [2] Find by account name [3] Find by age [4] Find by gender"))
 
                                 if acc_no_input_find == 1:
-
+                                        #by account no
                                         print("")
                                         acc_no_input_find_no = int(input("Enter account no. : "))
                                         if_1 = acc_info.find_one(Account_No=acc_no_input_find_no)
@@ -67,7 +67,7 @@ def main_program():
                                         print("")
 
                                 elif acc_no_input_find == 2:
-
+                                        #by name
                                         print("")
                                         acc_no_input_find_name = input("Enter account name : ")
                                         if_2 = acc_info.find_one(Name=acc_no_input_find_name)
@@ -75,7 +75,7 @@ def main_program():
                                         print("")
 
                                 elif acc_no_input_find == 3:
-
+                                        #by age
                                         print("")
                                         acc_no_input_find_age = int(input("Enter age : "))
                                         if_3 = acc_info.find_one(Age=acc_no_input_find_age)
@@ -83,7 +83,7 @@ def main_program():
                                         print("")
 
                                 elif acc_no_input_find == 4:
-
+                                        #by gender
                                         print("")
                                         acc_no_input_find_gender = input("Enter gender : ")
                                         if_4 = table.find_one(Gender=acc_no_input_find_gender)
@@ -91,19 +91,19 @@ def main_program():
                                         print("")
 
                                 else:
-                                        print("Oops ! Something went wrong... Try again...")
+                                        print("Oops ! Something went wrong... Try again...") #null or incorrect input
                                         print("")
                                         main_program()
 
                         else:
-                                print("Oops ! Something went wrong... Try again...")
+                                print("Oops ! Something went wrong... Try again...") #null or incorrect input
                                 print("")
                                 main_program()
 		
 		except ValueError:
 
 			pass
-			print("Oops ! Something went wrong... Try again...")
+			print("Oops ! Something went wrong... Try again...") #null or incorrect input
 			print("")
 			main_program()
 
