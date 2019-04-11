@@ -16,4 +16,4 @@ Uses sqlite3 as database structure <br>
 +   Enter the same username and password used in ``Server_Side.py``.
 +   Follow the on-screen instructions.
 
-<i>Made with love by @prakhargurunani</i>
+<i>Made with :heart:</i>
